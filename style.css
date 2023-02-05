@@ -77,6 +77,21 @@ a{
 /* ----------------------------- */
 .main{
     height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main .content{
+    border: 1px solid red;
+    color: #F33535;
+}
+.main .content p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.main .content h2{
+    font-size: 40px;
 }
 .animated-text {
     height: 70px;
@@ -110,4 +125,9 @@ a{
     100% {
       margin-top: 0;
     }
+  }
+  /* ------------------------------------ */
+  .about{
+    height: 100vh;
+    background: #fff;
   }
