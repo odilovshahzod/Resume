@@ -41,6 +41,7 @@ a{
     font-size: 38px;
     font-weight: 700;
     color: crimson;
+    margin-bottom: 80px;
   }
   .title::before{
     content: "";
@@ -161,26 +162,24 @@ a{
   .about{
     height: 100vh;
     background: #fff;
-    padding: 80px 0 0;
+    padding: 80px 20px 0;
   }
   .about_content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 80px;
-    padding: 10px 20px;
+    align-items: flex-start;
   }
   .about_content .img-card img{
     height: 320px;
     border-radius: 5px;
   }
-  .about_content .column{
-    width: 48%;
+  .column{
+    width: 45%;
   }
-  .about_content .paragraph-text{
-    padding: 10px 0px 15px;
+  .paragraph-text{
+    padding: 8px 0px 15px;
   }
-  .about_content .paragraph-text li{
+  .paragraph-text li{
     margin: 10px 0;
     font-weight: 500;
     font-size: 15px;
@@ -190,7 +189,14 @@ a{
   .skills{
     height: 100vh;
     background: #000016;
-    padding: 80px 0;
+    padding: 80px 20px 0;
+  }
+  .skills_content{
+    border: 1px solid red;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   /* ---------------------------------- */
   .work{
