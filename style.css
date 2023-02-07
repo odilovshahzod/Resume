@@ -105,8 +105,8 @@ a{
 }
 /* ----------------------------- */
 .main{
-    height: 100vh;
-    padding-top: 80px;
+    min-height: 100vh;
+    padding-top: 130px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -160,14 +160,14 @@ a{
 }
 /* ------------------------------------ */
   .about{
-    height: 100vh;
+    min-height: 100vh;
     background: #fff;
-    padding: 80px 30px 0;
+    padding: 80px 30px;
   }
   .about_content{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
   .about_content .img-card img{
     height: 320px;
@@ -187,9 +187,9 @@ a{
   }
   /* ---------------------------------- */
   .skills{
-    height: 100vh;
+    min-height: 100vh;
     background: #000016;
-    padding: 80px 50px 0;
+    padding: 80px 50px;
   }
   .skills_content{
     color: #fff;
@@ -252,7 +252,7 @@ a{
   }
   /* ---------------------------------- */
   .work{
-    height: 100vh;
+    min-height: 100vh;
     background: #fff;
     padding: 80px 20px;
     text-align: center;
@@ -271,6 +271,7 @@ a{
     background: #fff;
     width: 300px;
     padding: 10px 10px 20px 10px ;
+    margin: 10px;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
@@ -298,8 +299,125 @@ a{
   }
   /* --------------------------------------------------- */
   .gallery{
-    height: 100vh;
+    min-height: 100vh;
     background: #000016;
+    padding: 80px 30px;
+    text-align: center;
+  } 
+  .gallery_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .gallery_content .card{
+    width: 340px;
+    height: 530px;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+
+  }
+  .gallery_content .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+  .gallery_content .card img:hover {
+    transform: scale(1.2);
+}
+.gallery .btn{
+  margin-top: 30px;
+}
+  /* --------------------------------------------------- */
+  .contact{
+    min-height: 100vh;
+    background: #fff;
+    padding: 80px 20px 50px;
+    text-align: center;
+  }
+  .contact .contact_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 70px 120px;
+  }
+  .contact_content .card {
+    background: #fff;
+    width: 260px;
+    padding: 20px 0px;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .contact_content .card .contact-icon {
+    color: crimson;
+    font-size: 40px;
+    transition: transform 0.5s ease;
+  }
+  .contact_content .card:hover .contact-icon {
+    transform: translateY(-10px);
+  }
+  .contact_content .card .info h3 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px;
+  }
+  .contact_content .card .info p{
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  } 
+  .contact-form {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.5);
+  }
+  .contact-form h3 {
+    color: #111;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-form .input-box input, .contact-form .input-box textarea {
+    color: #111;
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto;
+    font: size 17px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #111;
+    resize: none;
+    border-radius: 3px;
+  }
+  .footer {
+    background: #000016;
+    color: #fff;
+    text-align: center;
     padding: 80px 0;
   }
-
+  
+  .footer .footer-title {
+    font-style: 20px;
+    font-weight: 600;
+  }
+  
+  .footer p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
