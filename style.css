@@ -162,7 +162,7 @@ a{
   .about{
     height: 100vh;
     background: #fff;
-    padding: 80px 20px 0;
+    padding: 80px 30px 0;
   }
   .about_content{
     display: flex;
@@ -189,18 +189,117 @@ a{
   .skills{
     height: 100vh;
     background: #000016;
-    padding: 80px 20px 0;
+    padding: 80px 50px 0;
   }
   .skills_content{
-    border: 1px solid red;
     color: #fff;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+  }
+  .skills_content .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  .skills_content .bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .skills_content .info span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .skills_content .line {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+    border-radius: 2px;
+  }
+  
+  .skills_content .line::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+  }
+  
+  .skills_content .html::before {
+    width: 95%;
+    background: #E45126;
+  }
+  
+  .skills_content .css::before {
+    width: 85%;
+    background: #0C73BB;
+  }
+ 
+  .skills_content .javascript::before {
+    width: 80%;
+    background: #E3A324;
+  }
+  .skills_content .react::before {
+    width: 65%;
+    background: #22A7F2;
   }
   /* ---------------------------------- */
   .work{
     height: 100vh;
     background: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .work .work_content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 0 40px;
+  }
+  .title p {
+    width: 80%;
+  }
+  .work_content .card {
+    background: #fff;
+    width: 300px;
+    padding: 10px 10px 20px 10px ;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+  }
+  .work_content .card img{
+    width: 100%;
+    border-radius: 4px;
+  }
+  .work_content .card h4{
+    display: block;
+    text-transform: uppercase;
+    padding: 18px 0;
+  }
+  .too_see{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  /* --------------------------------------------------- */
+  .gallery{
+    height: 100vh;
+    background: #000016;
     padding: 80px 0;
   }
+
