@@ -451,261 +451,266 @@ a{
     opacity: 1;
   }
 @media (max-width: 1200px) {
-  .btn {
-    font-size: 12px;
-    font-weight: 600;
-    padding: 8px 10px;
-    margin-top: 10px;
-  }
-  .title{
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0px;
-  }
-  .title::before{
-    top: 42px;
-    width: 130px;
-    height: 2px;
-    background-color: crimson;
-    transform: translate(-50%);
-  }
-  .title::after {
-    top: 37px;
-    width: 11px;
-    height: 11px;
-  }
-  .navbar{
-    padding: 10px 30px;
-  }
-  .navbar.sticky {
-    padding: 10px 30px;
-  }
-  .navbar .menu_open{
+    .btn {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 8px 10px;
+      margin-top: 10px;
+    }
+    .title{
+      font-size: 25px;
+      font-weight: 600;
+      margin: 0px;
+    }
+    .title::before{
+      top: 42px;
+      width: 130px;
+      height: 2px;
+      background-color: crimson;
+      transform: translate(-50%);
+    }
+    .title::after {
+      top: 37px;
+      width: 11px;
+      height: 11px;
+    }
+    .navbar{
+      padding: 10px 30px;
+    }
+    .navbar.sticky {
+      padding: 10px 30px;
+    }
+    .navbar .menu_open{
+        display: block;
+    }
+    .navbar .menu_open.active .menu_open_p{
+      transform: translateY(-30px);
+    }
+    .navbar .logo{
+        font-size: 20px;
+    }
+    .navbar .navigation {
+      position: absolute;
+      height: 0;
+      right: 0;
+      top: 100%;
+      backdrop-filter: blur(3px);
+      background: transparent;
+      border: 1px solid transparent;
+      transition: 0.5s ease;
+      border-radius: 4px;
+    }
+    .navbar .navigation.active {
+      height: auto;
+      background: rgba(255, 255, 255, 0.5);
+      border-color: rgba(0, 0, 0, 0.3);
+    }
+    .navbar .navigation a{
+      display: none;
+      margin: 0;
+      color: #000;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      font-size: 16px;
+      padding: 0;
+      transition: 0.5s ease;
+    }
+    .navbar .navigation.active a{
       display: block;
-  }
-  .navbar .menu_open.active .menu_open_p{
-    transform: translateY(-30px);
-  }
-  .navbar .logo{
-      font-size: 20px;
-  }
-  .navbar .navigation {
-    position: absolute;
-    height: 0;
-    right: 0;
-    top: 100%;
-    backdrop-filter: blur(3px);
-    background: transparent;
-    border: 1px solid transparent;
-    transition: 0.5s ease;
-    border-radius: 4px;
-  }
-  .navbar .navigation.active {
-    height: auto;
-    background: rgba(255, 255, 255, 0.5);
-    border-color: rgba(0, 0, 0, 0.3);
-  }
-  .navbar .navigation a{
-    display: none;
-    margin: 0;
-    color: #000;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    font-size: 16px;
-    padding: 0;
-    transition: 0.5s ease;
-  }
-  .navbar .navigation.active a{
-    display: block;
-    padding: 5px 10px;
-    margin: 10px 20px;
-  }
-  .navbar .navigation a:hover{
+      padding: 5px 10px;
+      margin: 10px 20px;
+    }
+    .navbar .navigation a:hover{
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .column{
+      width: 100%;
+    }
+    .content-title{
+      font-size: 18px;
+    }
+    .paragraph-text{
+      padding: 0;
+      text-align: justify;
+    }
+    .paragraph-text li{
+      margin: 8px 0;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+    .main{
+      padding: 180px 20px 0;
+      align-items: flex-start;
+    }
+    .main .main_content{
+      width: 100%;
+      margin: 0;
       background: rgba(0, 0, 0, 0.2);
-  }
-  .column{
-    width: 100%;
-  }
-  .content-title{
-    font-size: 18px;
-  }
-  .paragraph-text{
-    padding: 0;
-    text-align: justify;
-  }
-  .paragraph-text li{
-    margin: 8px 0;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 500;
-  }
-  .main{
-    padding: 180px 20px 0;
-    align-items: flex-start;
-  }
-  .main .main_content{
-    width: 100%;
-    margin: 0;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  }
-  .main .main_content p{
-    font-size: 16px;
-  }
-  .main .main_content h2{
-    font-size: 26px;
-  }
-  .animated-text {
-    height: 35px;
-  }
-  .animated-text h3 {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 40px;
-  }
-  @keyframes text-move {
-    0% {margin-top: 0;}
-    25% {margin-top: -42px;}
-    50% {margin-top: -84px;}
-    75% {margin-top: -42px;}
-    100% {margin-top: 0;}
-}
-.main .btn{
-  margin: 10px 0 15px;
-}
-.main .media-icons a{
-  font-size: 16px;
-}
-.about{
-  padding: 30px 20px;
-}
-.about_content{
-  display: block;
-  margin: 60px 0 0;
-}
-.about_content .img-card{
-  margin-bottom: 30px;
-}
-.about_content .img-card img{
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-.about_content .column{
-  padding-left: 20px;
-}
-  .skills{
-    padding: 30px 20px;
-  }
-  .skills_content{
-    display: block;
-    margin: 60px 0 0;
-  }
-  .skills_content .btn{
-    margin: 20px 0 30px;
-  }
-  .skills_content .bar {
-    padding: 0;
-  }
-  .skills_content .bar .info {
-    margin-bottom: 3px;
-  }
-  .skills_content .info span {
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 1px;
-  }
-  .skills_content .line {
-    height: 12px;
-  }
-  .work{
-    padding: 30px 20px;
-  }
-  .work_content {
-    display: block;
-    margin: 60px 0 0;
-  }
-  .work_content .card {
-    width: auto;
-    margin: 0 0 30px;
-  }
-  .work_content .card h4{
-    font-size: 14px;
-    padding: 10px 0;
-  }
-  .too_see{
-    font-size: 10px;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.2);
-  }
-  .gallery{
-    padding: 30px 20px;
-  } 
-  .gallery_content{
-    display: block;
-    margin: 60px 0 0;
-  }
-  .gallery_content .card{
-    width: auto;
-    height: 450px;
-    margin: 20px 0;
-    border-radius: 5px;
-  }
-  .gallery .btn{
-    margin-top: 10px;
-  }
-  .contact{
-    padding: 30px 30px;
-  }
-  .contact_content {
-    display: block;
-    margin: 60px 0 0;
-    padding: 0;
-    text-align: center;
-  }
-  .contact_content .card {
-    width: 100%;
-    margin: 30px 0;
-    border-radius: 5px;
-  }
-  .contact_content .card .contact-icon {
-    font-size: 35px;
-  }
-  .contact_content .card .info h3 {
-    color: #111;
-    font-size: 14px;
-    margin: 8px;
-  }
-  .contact_content .card .info p{
-    font-size: 12px;
-    margin-bottom: 12px;
-  } 
-  .contact-form {
-    padding: 20px;
-    border-radius: 5px;
-  }
-  .contact-form h3 {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form .input-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .contact-form .input-box input, .contact-form .input-box textarea {
-    width: 100%;
-    padding: 8px;
-    font-size: 13px;
-  }
-  .footer p {
-    font-size: 15px;
-    letter-spacing: 1.5px;
-  }
-  .scrollToTop-btn {
-    width: 35px;
-    height: 35px;
-    bottom: 20px;
-    font-size: 14px;
-  }
+      border-radius: 4px;
+    }
+    .main .main_content p{
+      font-size: 16px;
+    }
+    .main .main_content h2{
+      font-size: 26px;
+    }
+    .animated-text {
+      height: 35px;
+    }
+    .animated-text h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 40px;
+    }
+    @keyframes text-move {
+      0% {margin-top: 0;}
+      25% {margin-top: -42px;}
+      50% {margin-top: -84px;}
+      75% {margin-top: -42px;}
+      100% {margin-top: 0;}
+    }
+    .main .btn{
+      margin: 10px 0 15px;
+    }
+    .main .media-icons a{
+      font-size: 16px;
+    }
+    .about{
+      height: auto;
+      padding: 30px 20px;
+    }
+    .about_content{
+      display: block;
+      margin: 60px 0 0;
+    }
+    .about_content .img-card{
+      margin-bottom: 30px;
+    }
+    .about_content .img-card img{
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .about_content .column{
+      padding-left: 20px;
+    }
+    .skills{
+      height: auto;
+      padding: 30px 20px;
+    }
+    .skills_content{
+      display: block;
+      margin: 60px 0 0;
+    }
+    .skills_content .btn{
+      margin: 20px 0 30px;
+    }
+    .skills_content .bar {
+      padding: 0;
+    }
+    .skills_content .bar .info {
+      margin-bottom: 3px;
+    }
+    .skills_content .info span {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    .skills_content .line {
+      height: 12px;
+    }
+    .work{
+      height: auto;
+      padding: 30px 20px;
+    }
+    .work_content {
+      display: block;
+      margin: 60px 0 0;
+    }
+    .work_content .card {
+      width: auto;
+      margin: 0 0 30px;
+    }
+    .work_content .card h4{
+      font-size: 14px;
+      padding: 10px 0;
+    }
+    .too_see{
+      font-size: 10px;
+      padding: 5px 10px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .gallery{
+      height: auto;
+      padding: 30px 20px;
+    } 
+    .gallery_content{
+      display: block;
+      margin: 60px 0 0;
+    }
+    .gallery_content .card{
+      width: auto;
+      height: 450px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    .gallery .btn{
+      margin-top: 10px;
+    }
+    .contact{
+      height: auto;
+      padding: 30px 30px;
+    }
+    .contact_content {
+      display: block;
+      margin: 60px 0 0;
+      padding: 0;
+      text-align: center;
+    }
+    .contact_content .card {
+      width: 100%;
+      margin: 30px 0;
+      border-radius: 5px;
+    }
+    .contact_content .card .contact-icon {
+      font-size: 35px;
+    }
+    .contact_content .card .info h3 {
+      color: #111;
+      font-size: 14px;
+      margin: 8px;
+    }
+    .contact_content .card .info p{
+      font-size: 12px;
+      margin-bottom: 12px;
+    } 
+    .contact-form {
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .contact-form h3 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .contact-form .input-box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .contact-form .input-box input, .contact-form .input-box textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 13px;
+    }
+    .footer p {
+      font-size: 15px;
+      letter-spacing: 1.5px;
+    }
+    .scrollToTop-btn {
+      width: 35px;
+      height: 35px;
+      bottom: 20px;
+      font-size: 14px;
+    }
 }
